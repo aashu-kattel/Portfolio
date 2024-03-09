@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body {
+    background-color: #222831;
+    color:#EEEEEE;
+    font-family: "Rubik", sans-serif;
+}
+
+p,
+span,
+li {
+    color: #EEEEEE;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+li {
+    line-height: 1.9em;
+}
+
+
+#container--main {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em 1em 0;
+}
+
+.section--page {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.section--page-nopaddin-btm {
+    padding-top: 1em;
+}
+
+#wrapper--hero {
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#user-name {
+    font-size: 48px;
+    line-height: 1em;
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    transition: 0.3s ease all;
+}
+
+#profile-pic:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+    width: 350px;
+    height: 350px;
+}
+
+#socials--list {
+    display: flex;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a {
+    font-weight: 300;
+    color:#EEEEEE;
+    font-size: 0.9em;
+    transition: 0.3s;
+}
+
+#socials--list a:hover {
+    color: #76ABAE;
+}
+
+#qualifications--list {
+    list-style: none;
+}
+
+#wrapper--techstack__items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack {
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+    align-items: center;
+    display: flex;
+    gap: 0.5em;
+}
+
+.card--project {
+    padding-bottom: 2.5em;
+}
+
+.card--project a {
+    color: #EEEEEE;
+    transition: 0.3s;
+}
+
+.card--project a:hover {
+    color: #76ABAE;
+}
+
+.project-page {
+    padding: 0 40px;
+}
+
+.split {
+    display: flex;
+    gap: 30px;
+}
+
+.split__content span a {
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.split__content p ,li {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    color:#899495
+}
+
+.split__content ul {
+    margin-top: 5px;
+    margin-bottom: 3px;
+    color:#cebe61;
+}
+
+.split__content--sticky {
+    position: sticky;
+    top: 200px;
+}
+
+.project-img img {
+    width: 776px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.project-img img:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+.split__content #livedemo a {
+    color: #76ABAE;
+}
+
+@media(max-width:600px) {
+
+    #socials--list {
+        row-gap: 1em;
+    }
+
+    .section--page {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    #wrapper--hero {
+        display: flex;
+        align-items: center;
+        gap: 1em;
+    }
+
+    #profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    #wrapper--hero {
+        flex-direction: column;
+    }
+
+    .project-page {
+        padding: 0 20px;
+    }
+
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .split.flex-col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .project-img img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 601px) and (max-width:767px) {
+    #socials--list {
+        row-gap: 1em;
+    }
+
+    .split {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .split.flex-col-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .project-img img {
+        width: 550px;
+    }
+}
