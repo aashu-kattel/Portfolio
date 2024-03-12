@@ -21,6 +21,25 @@ body::-webkit-scrollbar {
     border: 3px solid #222831;   
   }
 
+  #scrollToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #000000;
+    cursor: pointer;
+    padding: 12px 12px;
+    border-radius: 50%;
+  }
+  
+  #scrollToTopBtn:hover {
+    bottom: 20px;
+  }  
+
 p,
 span,
 li {
