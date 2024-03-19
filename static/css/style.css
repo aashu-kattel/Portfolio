@@ -40,6 +40,14 @@ body::-webkit-scrollbar {
     bottom: 20px;
   }  
 
+  #email a{
+    color: #76ABAE; 
+    font-weight: 500;
+    }
+    #email a:hover {
+        color: #e2cb00;
+    }
+
 p,
 span,
 li {
