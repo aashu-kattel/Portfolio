@@ -21,14 +21,6 @@ body::-webkit-scrollbar {
     border: 3px solid #222831;   
   }
 
-  #count{
-    padding-left:15px;
-  }
-
-  /* #count img{
-    margin-top:-10px;
-  } */
-
   #scrollToTopBtn {
     display: none;
     position: fixed;
