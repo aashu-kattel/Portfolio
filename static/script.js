@@ -1,3 +1,14 @@
+window.onload = function() {
+  Swal.fire({
+    imageUrl: "https://images.squarespace-cdn.com/content/v1/5669db74d8af10228342a205/1539533938326-KS7WAJ8P0HLRQUJEV0LF/Welcome.gif",
+    imageWidth: 400,
+    imageHeight: 200,
+    showConfirmButton: false,
+    timer: 1800,
+    imageAlt: "Custom image"
+  });
+};
+
 window.addEventListener('scroll', handleScroll);
 
 function handleScroll() {

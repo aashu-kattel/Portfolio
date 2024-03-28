@@ -13,6 +13,7 @@ body {
     width: 0%;
     position: fixed;
     top: 0;
+    left:0;
     z-index: 1;
 }
 
@@ -237,7 +238,7 @@ li {
   
   .content {
     position: relative;
-    z-index: 1; /* Ensure content is on top of lines */
+    z-index: 1; 
   }
 
   .handcode {
