@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         behavior: "smooth"
       });
     }
-  });
+});
 
 document.addEventListener('contextmenu', function (e) {
   e.preventDefault();
@@ -55,4 +55,15 @@ document.addEventListener('keydown', function(e) {
         e.preventDefault();
     }
 });
-  
+
+document.addEventListener('DOMContentLoaded', (event) => {
+  let seconds = 0;
+  const timerElement = document.getElementById('seconds');
+
+  function incrementSeconds() {
+      seconds += 1;
+      timerElement.innerText = seconds;
+  }
+
+  setInterval(incrementSeconds, 1000);
+});
