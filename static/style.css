@@ -293,6 +293,8 @@ li {
     width: 100%;
     margin-bottom: 30px;
     background-color: #44ff00;
+    margin: 0;
+    padding: 0;
 }
 @media (max-width: 600px) {
     .section-line {
