@@ -5,8 +5,8 @@ body {
     overflow-x: hidden;
     color:#EEEEEE;
     font-family: "Rubik", sans-serif;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 .progress-bar {
@@ -409,12 +409,13 @@ footer{
     font-weight: 400;
     font-style: normal;
     background-image: linear-gradient(45deg, rgb(33,33,33) 0%,transparent 73%),repeating-linear-gradient(90deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),repeating-linear-gradient(0deg, rgba(127, 127, 127,0.1) 0px, rgba(127, 127, 127,0.1) 1px,transparent 1px, transparent 17px),linear-gradient(0deg, rgb(33,33,33),rgb(33,33,33));
+
     margin-top: 25px;
 }
 
 @media (max-width: 600px) {
     footer {
-        font-size: 20px;
+        font-size: 15px;
         margin-top: 10px;
     }
 }
