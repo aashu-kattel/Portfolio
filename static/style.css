@@ -9,6 +9,14 @@ body {
     padding: 0; */
 }
 
+/* spline-viewer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: scale(0.35);
+    z-index: 99;
+} */
+
 .progress-bar {
     background: #ff4163;
     height: 5px;
@@ -287,20 +295,6 @@ li {
     /* max-width: 100%;  */
     /* overflow: auto; */
   }
-
-  #section-line {
-    height: 2px;
-    width: 100%;
-    margin-bottom: 30px;
-    background-color: #44ff00;
-    margin: 0;
-    padding: 0;
-}
-@media (max-width: 600px) {
-    .section-line {
-        width: 100%;
-    }
-}
 
 .link-line {
     display: flex;
