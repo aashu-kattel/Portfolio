@@ -328,8 +328,11 @@ li {
     background-color: #ff5ad3;
 }
 #pov{
-    background-color: #000000;
-    color:white;
+    background-color: white;
+    color:black;
+}
+#wayback{
+    color:rgb(182, 0, 0);
 }
 
 @media(max-width:600px) {
