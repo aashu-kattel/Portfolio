@@ -1,3 +1,8 @@
+console.log(`%c$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$`,'color: red;');
+console.log(`%cHEHE...No Heckin'    :') `, 
+'background-color:green; color: black; font-family: "Pixelify Sans", sans-serif; font-size: 30px;');
+console.log(`%c$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$`,'color: red;');
+
 window.onload = function() {
   Swal.fire({
     imageUrl: "https://images.squarespace-cdn.com/content/v1/5669db74d8af10228342a205/1539533938326-KS7WAJ8P0HLRQUJEV0LF/Welcome.gif",
@@ -51,9 +56,15 @@ document.addEventListener('contextmenu', function (e) {
 });
 
 document.addEventListener('keydown', function(e) {
-    if ((e.ctrlKey || e.metaKey) && e.shiftKey && e.key === 'I') {
+    if ((e.ctrlKey || e.metaKey) && e.shiftKey && (e.key === 'I' || e.key === 'C')) {
         e.preventDefault();
     }
+});
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'F12') {
+      e.preventDefault();
+  }
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
