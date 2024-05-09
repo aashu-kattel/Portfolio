@@ -83,7 +83,6 @@ document.addEventListener('copy', function(event) {
   clipboardData.setData('text/plain', bashCode);
 
   event.preventDefault();
-  // alert('modified copied content');
 });
 
 document.addEventListener('DOMContentLoaded', (event) => {
