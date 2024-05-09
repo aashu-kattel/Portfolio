@@ -335,6 +335,46 @@ li {
     color:rgb(182, 0, 0);
 }
 
+.terminal-window { 
+    margin-top:8px;
+    margin-left:30%;
+    background-color: #191919;
+    color:white;
+    width:38%;
+    height:12%;
+    font-family: monospace;
+    padding:15px;
+    border-radius: 10px;
+  }
+
+  .button {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+  .button:nth-child(1) {
+    background-color: #f44;
+  }
+  .button:nth-child(2) {
+    background-color: #ff0;
+  }
+  .button:nth-child(3) {
+    background-color: #0f0;
+  }
+
+  #instruction{
+      display: block;
+      margin-top: 10px;
+  }
+
+  #code{
+      color: #0f0;
+      display: block;
+      margin-top: 10px;
+
+  }
+
 @media(max-width:600px) {
 
     #socials--list {
