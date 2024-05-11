@@ -320,6 +320,11 @@ li {
     box-shadow: #EEEEEE 0px 0px 10px 0px;
 }
 
+summary:hover{
+    cursor:pointer;
+
+}
+
 #quote{
     background-color: #2268ff;
     color:white;
