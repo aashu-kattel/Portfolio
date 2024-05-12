@@ -343,7 +343,7 @@ summary:hover{
 .terminal-window { 
     position: relative;
     margin-top:8px;
-    left:28%;
+    left:29%;
     background-color: #191919;
     color:white;
     max-width:39%;
@@ -461,6 +461,18 @@ footer{
         font-size: 15px;
         margin-top: 10px;
     }
+    .terminal-window { 
+        position: relative;
+        margin-top:8px;
+        left:26%;
+        background-color: #191919;
+        color:white;
+        width:39%;
+        height:12%;
+        font-family: monospace;
+        padding:15px;
+        border-radius: 10px;
+      }
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
