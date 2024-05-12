@@ -341,11 +341,12 @@ summary:hover{
 }
 
 .terminal-window { 
+    position: relative;
     margin-top:8px;
-    margin-left:30%;
+    left:28%;
     background-color: #191919;
     color:white;
-    width:38%;
+    max-width:39%;
     height:12%;
     font-family: monospace;
     padding:15px;
