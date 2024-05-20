@@ -42,6 +42,15 @@ body::-webkit-scrollbar {
     border: 3px solid #222831;   
   }
 
+  #resume a{
+
+    color: #76ABAE; 
+    font-weight: 500;
+    }
+    #resume a:hover {
+        color: #e2cb00;
+  }
+
   #scrollToTopBtn {
     display: none;
     position: fixed;
