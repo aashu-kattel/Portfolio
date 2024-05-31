@@ -78,6 +78,22 @@ body::-webkit-scrollbar {
         color: #e2cb00;
     }
 
+#emo-scale::before {
+        content: "✉️";
+    }
+
+#emo-scale:hover::before{
+    content: "📧";
+}
+
+#emo-scale-1::before {
+    content: "⬇️";
+}
+
+#emo-scale-1:hover::before{
+content: "🔽";
+}
+
 p,
 span,
 li {
