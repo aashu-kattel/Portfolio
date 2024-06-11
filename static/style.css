@@ -120,10 +120,26 @@ li {
 .section--page {
     padding-top: 1em;
     padding-bottom: 1em;
+    animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range:entry 0% cover 20%;
+}
+@keyframes appear{
+    from{
+        opacity: 0;
+        scale:0.5;
+    }
+    to{
+        opacity: 1;
+        scale:1;
+    }
 }
 
 .section--page-nopaddin-btm {
     padding-top: 1em;
+    animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range:entry 0% cover 20%;
 }
 
 #wrapper--hero {
@@ -206,6 +222,19 @@ li {
 
 .project-page {
     padding: 0 40px;
+    animation: projects 5s linear;
+            animation-timeline: view();
+            animation-range:entry 0% cover 10%;
+}
+@keyframes projects{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .split {
@@ -254,6 +283,9 @@ li {
     position: relative;
     text-align: center;
     padding: 20px;
+    animation: appear 5s linear;
+            animation-timeline: view();
+            animation-range:entry 0% cover 20%;
   }
   
   .line {
@@ -327,6 +359,19 @@ li {
     justify-content: center;
     align-items: center;
     text-align: center;
+    animation: projects 5s linear;
+            animation-timeline: view();
+            animation-range:entry 0% cover 30%;
+}
+@keyframes projects{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 .link-line a {
