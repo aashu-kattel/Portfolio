@@ -42,6 +42,19 @@ body::-webkit-scrollbar {
     border: 3px solid #222831;   
   }
 
+@keyframes blink {
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+#konami {
+    position: absolute;
+    top: 0;
+    right: 0;
+    animation: blink 1s infinite;
+    font-size: 8px;
+}
+
   #resume a{
 
     color: #76ABAE; 
