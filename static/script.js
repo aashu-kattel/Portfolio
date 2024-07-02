@@ -14,6 +14,39 @@ window.onload = function() {
   });
 };
 
+let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+let konamiCodePosition = 0;
+
+document.addEventListener('keydown', function(e) {
+    let key = e.key;
+    let requiredKey = konamiCode[konamiCodePosition];
+    
+    if (key == requiredKey) {
+        konamiCodePosition++;
+        
+        if (konamiCodePosition == konamiCode.length) {
+            activateNothingizer();
+            konamiCodePosition = 0;
+        }
+    } else {
+        konamiCodePosition = 0;
+    }
+});
+
+function activateNothingizer() {
+    let audio = new Audio('binAud.mp3');
+    audio.play();
+
+    Swal.fire({
+        html: "Konami Code Activated! Doing nothing ...",
+        timer: 4800,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading();
+        }
+    });
+}
+
 window.addEventListener('scroll', handleScroll);
 
 function handleScroll() {
