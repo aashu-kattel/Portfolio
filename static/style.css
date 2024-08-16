@@ -55,6 +55,10 @@ body::-webkit-scrollbar {
     font-size: 8px;
 }
 
+#design{
+    color:yellow;
+}
+
   #resume a{
 
     color: #76ABAE; 
